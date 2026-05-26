@@ -10,39 +10,35 @@ This repository contains the documentation, schematic implementations, and findi
 
 ![Group Photo / Meeting Screenshot](images/groupphoto.jpeg)
 
-### Group Members & Attendance
-| Student Name | Student ID | Role / Contribution | Attendance |
-| :--- | :--- | :--- | :---: |
-| Member 1 | 123456 | Experiment 1 & 2 Setup | Physical / Online |
-| Member 2 | 123456 | Experiment 3 & 4 Setup | Physical / Online |
-| Member 3 | 123456 | Multimeter Readings & Data | Physical / Online |
-| Member 4 | 123456 | Documentation & GitHub | Physical / Online |
-
+### Group Members 
+| Student Name | Student ID |
+| :--- | :--- |
+| Waruhiu Jeremy Kang'ethe| 166263 |
+| Deborah Rehana| 168656 | 
+| Murega Kelvin Mutwiri| 166914 | 
+| Muthii Eric Macharia| 166390 | 
+| Andrew Karanja Gathirwa| 167144 | 
 ---
 
 ## 🔬 Experiment 1: Resistor Value Verification
 
 ### 1. Color Code Identification
-* **Selected Resistor Bands:** [e.g., Brown, Black, Red, Gold]
-* **Determined Resistance Value (Nominal):** `_______ Ω`
+* **Selected Resistor Bands:** Gold, Brown, Red, Orange
+* **Determined Resistance Value (Nominal):** `___220____ Ω`
 
-![Resistor Color Code Setup](path/to/resistor_color_code.png)
+![Resistor Color Code Setup](images/resistor.jpeg)
 
 ### 2. Multimeter Measurement
-* **Measured Resistance Value:** `_______ Ω`
+* **Measured Resistance Value:** `_____220.1__ Ω`
 
-![Multimeter Resistance Measurement](path/to/multimeter_resistance.png)
+![Multimeter Resistance Measurement](images/rvalue.jpeg)
 
 ### 📊 Summary Table
 | Method | Resistance Value (Ω) |
 | :--- | :--- |
-| **Nominal (Color Code)** | `____ Ω` |
-| **Measured (Multimeter)** | `____ Ω` |
+| **Nominal (Color Code)** | `__220__ Ω` |
+| **Measured (Multimeter)** | `__220.1__ Ω` |
 
-### 💬 Experiment Reflection
-**Question:** Where does the difference in the resistance values arise from?
-
-> **Answer:** > [Insert your reflection here. *Hint: Consider component manufacturing tolerances (the 4th/5th color band like Gold ±5% or Silver ±10%), multimeter calibration, probe resistance, and ambient temperature.*]
 
 ---
 
@@ -51,9 +47,9 @@ This repository contains the documentation, schematic implementations, and findi
 ### 1. Basic Circuit Schematic & Implementation
 The Blink program was deployed using the Arduino IDE to control the LED circuit.
 
-![Physical Implementation of Basic LED Circuit](path/to/basic_led_circuit.png)
+![Physical Implementation of Basic LED Circuit](images/blink.jpeg)
 
-* **Measured Circuit Voltage:** `_______ V` (via Multimeter)
+* **Measured Circuit Voltage:** `5.112V` (via Multimeter)
 
 ---
 
@@ -63,7 +59,7 @@ A potentiometer was added to simulate Pulse Width Modulation (PWM) and control t
 #### 📸 Circuit Brightness Levels
 | 25% Brightness | 50% Brightness | 100% Brightness |
 | :---: | :---: | :---: |
-| ![25% Brightness](path/to/led_25.png) | ![50% Brightness](path/to/led_50.png) | ![100% Brightness](path/to/led_100.png) |
+| ![25% Brightness](images/p1.jpeg) | ![50% Brightness](images/p2.jpeg) | ![100% Brightness](images/p3.jpeg) |
 | *LED at 25% duty cycle* | *LED at 50% duty cycle* | *LED at 100% duty cycle* |
 
 ---
@@ -73,21 +69,20 @@ A potentiometer was added to simulate Pulse Width Modulation (PWM) and control t
 ### 1. Physical Implementation
 The circuit was reconfigured to connect two resistors in a series configuration alongside the LED.
 
-![Series Circuit Implementation](path/to/series_circuit.png)
+![Series Circuit Implementation](images/series.jpeg)
 
 ### 📊 Voltage Readings
-* **Voltage Across Resistor 1 ($V_{R1}$):** `_______ V`
-* **Voltage Across Resistor 2 ($V_{R2}$):** `_______ V`
-* **Total Voltage Across Resistors ($V_{Total}$):** `_______ V`
+* **Voltage Across Resistor 1 ($V_{R1}$):** `___5.4____ V`
+* **Voltage Across Resistor 2 ($V_{R2}$):** `___5.4____ V`
+* **Total Voltage Across Resistors ($V_{Total}$):** `___5.1____ V`
 
 ### 💬 Experiment Reflection
 **Question:** Use Ohm’s Law ($I = V / R$) to estimate the current passed at each resistor.
 
 > **Calculations:**
-> * **Current through $R_1$ ($I_1$):** $I_1 = V_{R1} / R_1$ = `_______ A` (or `___ mA`)
-> * **Current through $R_2$ ($I_2$):** $I_2 = V_{R2} / R_2$ = `_______ A` (or `___ mA`)
+> * **Total Current:** `____0.5 __`
 >
-> **Conclusion:** > [Insert your observation here. *Hint: In a series circuit, what do you notice about the current flowing through each components?*]
+
 
 ---
 
@@ -96,20 +91,16 @@ The circuit was reconfigured to connect two resistors in a series configuration 
 ### 1. Physical Implementation
 The circuit was reconfigured to connect both resistors in a parallel configuration.
 
-![Parallel Circuit Implementation](path/to/parallel_circuit.png)
+![Parallel Circuit Implementation](images/parallel.jpeg)
 
 ### 📊 Voltage Readings
-* **Voltage Across Resistor 1 ($V_{R1}$):** `_______ V`
-* **Voltage Across Resistor 2 ($V_{R2}$):** `_______ V`
+* **Voltage Across Resistor 1 ($V_{R1}$):** `___5.1____ V`
+* **Voltage Across Resistor 2 ($V_{R2}$):** `____5.1_ V`
 
 ### 💬 Experiment Reflection
 **Question:** Use Ohm’s Law ($I = V / R$) to estimate the current passed at each resistor.
 
 > **Calculations:**
-> * **Current through $R_1$ ($I_1$):** $I_1 = V_{R1} / R_1$ = `_______ A` (or `___ mA`)
-> * **Current through $R_2$ ($I_2$):** $I_2 = V_{R2} / R_2$ = `_______ A` (or `___ mA`)
-> * **Total Circuit Current ($I_{Total} = I_1 + I_2$):** `_______ mA`
->
-> **Conclusion:** > [Insert your observation here. *Hint: In a parallel circuit, contrast how voltage behaves across branches versus how current splits across them.*]
+> * **Current through circuit:** `___13.78__ A`
 
 ---
